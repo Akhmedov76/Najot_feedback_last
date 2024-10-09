@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,7 +42,7 @@
             </div>
             <a href="/" type="button" class="btn btn-secondary back-home">Home</a>
             <form method="post" action="{% url 'home_page:submit_offer' %}" id="signUpForm">
-                {% csrf_token %}
+
                 <h4 class="form-title">Submit a problem</h4>
                 <div class="form-group mt-4">
                     <label for="problemTitle">Title</label>
@@ -58,16 +58,16 @@
             <form method="post" id="signInForm" style="display: none;">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <h4 class="form-title">Submit a offer</h4>
+<!--                <h4 class="form-title">Submit a offer</h4>-->
                 <div class="form-group mt-4">
-                    <label for="offerTitle">Title</label>
-                    <input type="text" class="form-control" id="offerTitle" placeholder="Enter offer title">
+<!--                    <label for="offerTitle">Title</label>-->
+<!--                    <input type="text" class="form-control" id="offerTitle" placeholder="Enter offer title">-->
                 </div>
-                <div class="form-group">
-                    <label for="offerDescription">Description</label>
-                    <textarea class="form-control" id="offerDescription"
-                              placeholder="Enter offer description" maxlength="2000"></textarea>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <label for="offerDescription">Description</label>-->
+<!--                    <textarea class="form-control" id="offerDescription"-->
+<!--                              placeholder="Enter offer description" maxlength="2000"></textarea>-->
+<!--                </div>-->
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>

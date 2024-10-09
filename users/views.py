@@ -32,7 +32,7 @@ def send_email_verification(request, user):
     uid = urlsafe_base64_encode(force_bytes(user.pk))
     current_site = get_current_site(request)
     verification_url = reverse('users:verify-email', kwargs={'uidb64': uid, 'token': token})
-    full_url = f"https://{current_site.domain}/{verification_url}"
+    full_url = f"http://{current_site.domain}{verification_url}"
 
     text_content = render_to_string(
         'verify_email.html',

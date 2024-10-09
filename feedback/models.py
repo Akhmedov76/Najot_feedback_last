@@ -18,7 +18,7 @@ class OffersModel(models.Model):
 
 
 class ProblemsModel(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, verbose_name='problems_title', unique=True)
     description = models.TextField()
 
     created_at = models.DateTimeField(auto_now_add=True)
@@ -27,4 +27,6 @@ class ProblemsModel(models.Model):
     def __str__(self):
         return self.title
 
-
+    class Meta:
+        verbose_name = _("Problem")
+        verbose_name_plural = _("Problems")
