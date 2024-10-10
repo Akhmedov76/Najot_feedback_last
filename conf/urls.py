@@ -27,7 +27,7 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('', include('feedback.urls', namespace='home_page')),
-    path('', include('users.urls', namespace='users')),
+    path('users/', include('users.urls', namespace='users')),
     path('submit-offer/', include('feedback.urls', namespace='offers-submit'))
 )
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
