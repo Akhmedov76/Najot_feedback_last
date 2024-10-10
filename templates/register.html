@@ -56,10 +56,30 @@
                         <div>
                             <p style="text-align: start"><b>{% trans 'Register' %}</b></p>
                             <div class="input-group mb-3">
-                                <input type="text" name="full_name" id="full_name"
+                                <input type="text" name="first_name" id="full_name"
                                        class="form-control register-form-input"
                                        aria-label="full_name" aria-describedby="basic-addon1"
-                                       placeholder="{% trans 'Full name' %}" required>
+                                       placeholder="{% trans 'First name' %}" required>
+
+                                <span class="input-group-text" id="basic-addon1">
+                                            <i class="custom-form-icon bi-person"></i>
+                                        </span>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" name="lastname" id="full_name"
+                                       class="form-control register-form-input"
+                                       aria-label="lastname" aria-describedby="basic-addon1"
+                                       placeholder="{% trans 'Last name' %}" required>
+
+                                <span class="input-group-text" id="basic-addon1">
+                                            <i class="custom-form-icon bi-person"></i>
+                                        </span>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" name="username" id="full_name"
+                                       class="form-control register-form-input"
+                                       aria-label="username" aria-describedby="basic-addon1"
+                                       placeholder="{% trans 'Username' %}" required>
 
                                 <span class="input-group-text" id="basic-addon1">
                                             <i class="custom-form-icon bi-person"></i>

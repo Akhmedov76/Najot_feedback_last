@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 21:36+0500\n"
+"POT-Creation-Date: 2024-10-11 00:27+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,9 +30,17 @@ msgstr "Takliflar"
 msgid "Problem"
 msgstr "Muammo"
 
-#: .\feedback\models.py:32 .\templates\index.html:59
+#: .\feedback\models.py:32 .\templates\index.html:59 .\templates\index.html:128
 msgid "Problems"
 msgstr "Muammolar"
+
+#: .\feedback\models.py:46
+msgid "About Site"
+msgstr "Sayt haqida"
+
+#: .\feedback\models.py:47
+msgid "About Sites"
+msgstr "Saytlar haqida"
 
 #: .\templates\index.html:55
 msgid "Home"
@@ -50,7 +58,7 @@ msgstr "404"
 msgid "Log out"
 msgstr "Chiqish"
 
-#: .\templates\index.html:108
+#: .\templates\index.html:108 .\templates\register.html:104
 msgid "Log in"
 msgstr "Kirish"
 
@@ -60,7 +68,7 @@ msgstr "So'rovlar va takliflar uchun onlayn platforma"
 
 #: .\templates\index.html:131
 msgid "Make an offer"
-msgstr "Taklif qilish"
+msgstr "Taklif berish"
 
 #: .\templates\login.html:51
 msgid "Welcome to"
@@ -111,3 +119,6 @@ msgstr "Parolni tasdiqlang"
 #: .\templates\register.html:103
 msgid "Do you have an account?"
 msgstr "Hisobingiz bormi?"
+
+msgid "title"
+msgstr "Sarlavha"

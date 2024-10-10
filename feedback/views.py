@@ -2,12 +2,19 @@ from django.shortcuts import render
 
 from feedback.form import OfferForm, ProblemsForm
 from users.models import RegisterModel, LoginModel
+from feedback.models import AboutSiteModel
 
 
 def home_page_view(request):
     register_form = RegisterModel()
     login_form = LoginModel()
-    return render(request, 'index.html', {'register_form': register_form, 'login_form': login_form})
+    about_site_form = AboutSiteModel.objects.all()
+    context={
+        'register': register_form,
+        'login': login_form,
+        'about_site': about_site_form,  # Add AboutSiteModel.objects.all() here to fetch all AboutSite data.
+    }
+    return render(request, 'index.html', context)
 
 
 def comments_view(request):
@@ -46,3 +53,8 @@ def profile_view(request):
 
 def error_view(request):
     return render(request, '404.html')
+
+
+def about_site_view(request):
+    about_form = AboutSiteForm()
+    return render(request, 'login.html', {'about_form': about_form, })

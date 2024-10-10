@@ -47,18 +47,6 @@ def send_email_verification(request, user):
     message.send()
 
 
-def generate_username(full_name):
-    if not full_name:
-        full_name = "user"
-    base_username = full_name.lower().replace(" ", "_")
-    username = base_username
-    count = 1
-    while User.objects.filter(username=username).exists():
-        username = f"{base_username}_{count}"
-        count += 1
-    return username
-
-
 @csrf_protect
 def register_view(request):
     if request.method == 'POST':
@@ -66,13 +54,8 @@ def register_view(request):
         if form.is_valid():
             user = form.save(commit=False)
             user.set_password(form.cleaned_data['password1'])
-
-            full_name = form.cleaned_data.get('full_name')
-            user.username = generate_username(full_name)
-
             user.is_active = False
             user.save()
-
             # send email verification
             send_email_verification(request, user)
             return redirect(reverse_lazy('users:login'))

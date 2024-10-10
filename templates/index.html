@@ -125,7 +125,7 @@
                     <h1 class="text-white mb-4">{% trans "Online platform for requests and offers" %}</h1>
 
                     <a href="{% url 'home_page:submit_offer' %}"
-                       class="btn custom-btn smoothscroll me-3">Problems</a>
+                       class="btn custom-btn smoothscroll me-3">{% trans 'Problems' %}</a>
 
                     <a href="{% url 'users:login' %}"
                        class="link link--kale smoothscroll">{% trans 'Make an offer' %}</a>
@@ -156,18 +156,14 @@
 
                 <div class="col-lg-6 col-12">
                     <div class="book-section-info">
-                        <h6>Brief information about the site</h6>
+                        {% for site in about_site %}
+                            <h6>{{ site.title }}</h6>
 
 
                         <h2 class="mb-4">Najot Ta'lim Feedback</h2>
 
-                        <p>The Najot Ta'lim Feedback Site is designed to collect and analyze feedback on services,
-                            classes, and overall experiences at the Najot Ta'lim educational center. The site allows
-                            students and their parents to identify strengths and areas for improvement at the center.
-                            Feedback is gathered through an online form, enhancing transparency and openness. The
-                            collected feedback is used to improve services and introduce new opportunities. The site
-                            also showcases the center’s achievements and successes, providing inspiration and
-                            strengthening its image.</p>
+                            <p>{{ site.description }}</p>
+                        {% endfor %}
                     </div>
                 </div>
 

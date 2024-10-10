@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 21:36+0500\n"
+"POT-Creation-Date: 2024-10-11 00:27+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,9 +30,17 @@ msgstr "Offers"
 msgid "Problem"
 msgstr "Problem"
 
-#: .\feedback\models.py:32 .\templates\index.html:59
+#: .\feedback\models.py:32 .\templates\index.html:59 .\templates\index.html:128
 msgid "Problems"
 msgstr "Problems"
+
+#: .\feedback\models.py:46
+msgid "About Site"
+msgstr "About Site"
+
+#: .\feedback\models.py:47
+msgid "About Sites"
+msgstr "About Sites"
 
 #: .\templates\index.html:55
 msgid "Home"
@@ -50,7 +58,7 @@ msgstr "404"
 msgid "Log out"
 msgstr "Log out"
 
-#: .\templates\index.html:108
+#: .\templates\index.html:108 .\templates\register.html:104
 msgid "Log in"
 msgstr "Log in"
 
@@ -111,3 +119,6 @@ msgstr "Confirm Password"
 #: .\templates\register.html:103
 msgid "Do you have an account?"
 msgstr "Do you have an account?"
+
+msgid "title"
+msgstr "title"

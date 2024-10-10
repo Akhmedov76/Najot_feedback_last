@@ -31,3 +31,18 @@ class ProblemsModel(models.Model):
         verbose_name = _("Problem")
         verbose_name_plural = _("Problems")
 
+
+class AboutSiteModel(models.Model):
+    title = models.CharField(max_length=255, verbose_name='about_site_title')
+    description = models.TextField()
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = _("About Site")
+        verbose_name_plural = _("About Sites")
+
