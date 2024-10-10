@@ -54,7 +54,7 @@ msgstr "Вопросы"
 
 #: .\feedback\models.py:68
 msgid "Profile Image"
-msgstr ""
+msgstr "Изображение профиля"
 
 #: .\feedback\models.py:76
 msgid "Team About Module"
@@ -102,15 +102,15 @@ msgstr "Часто задаваемые вопросы"
 
 #: .\templates\index.html:219
 msgid "Team"
-msgstr ""
+msgstr "Команда"
 
 #: .\templates\index.html:221
 msgid "About the participants in the team"
-msgstr ""
+msgstr "Об участниках команды"
 
 #: .\templates\index.html:236
 msgid "The founder of the project"
-msgstr ""
+msgstr "Основатель проекта"
 
 #: .\templates\login.html:51
 msgid "Welcome to"

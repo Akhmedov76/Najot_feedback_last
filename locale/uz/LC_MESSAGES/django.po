@@ -52,7 +52,7 @@ msgstr "Savollar"
 
 #: .\feedback\models.py:68
 msgid "Profile Image"
-msgstr ""
+msgstr "Profil rasmi"
 
 #: .\feedback\models.py:76
 msgid "Team About Module"
@@ -100,15 +100,15 @@ msgstr "Tez-tez beriladigan savollar"
 
 #: .\templates\index.html:219
 msgid "Team"
-msgstr ""
+msgstr "Jamoa"
 
 #: .\templates\index.html:221
 msgid "About the participants in the team"
-msgstr ""
+msgstr "Jamoadagi ishtirokchilar haqida"
 
 #: .\templates\index.html:236
 msgid "The founder of the project"
-msgstr ""
+msgstr "Loyiha asoschisi"
 
 #: .\templates\login.html:51
 msgid "Welcome to"
