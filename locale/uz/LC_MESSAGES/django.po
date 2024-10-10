@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 21:22+0500\n"
+"POT-Creation-Date: 2024-10-10 21:36+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr "Kirish"
 msgid "Username"
 msgstr "Foydalanuvchi nomi"
 
-#: .\templates\login.html:70
+#: .\templates\login.html:70 .\templates\register.html:82
 msgid "Password"
 msgstr "Parol"
 
@@ -89,3 +89,25 @@ msgstr "Hisobingiz mavjud emasmi?"
 #: .\templates\login.html:82
 msgid "Create account"
 msgstr "Hisob yaratish"
+
+#: .\templates\register.html:57 .\templates\register.html:100
+msgid "Register"
+msgstr "Roʻyxatdan oʻtish"
+
+#: .\templates\register.html:62
+msgid "Full name"
+msgstr "To'liq ism sharif"
+
+#: .\templates\register.html:72
+msgid "Email"
+msgstr "Elektron pochta"
+
+#: .\templates\register.html:92
+#, fuzzy
+#| msgid "Password"
+msgid "Confirm Password"
+msgstr "Parolni tasdiqlang"
+
+#: .\templates\register.html:103
+msgid "Do you have an account?"
+msgstr "Hisobingiz bormi?"

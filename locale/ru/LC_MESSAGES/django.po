@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 21:22+0500\n"
+"POT-Creation-Date: 2024-10-10 21:36+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,7 +80,7 @@ msgstr "Авторизоваться"
 msgid "Username"
 msgstr "Имя пользователя"
 
-#: .\templates\login.html:70
+#: .\templates\login.html:70 .\templates\register.html:82
 msgid "Password"
 msgstr "Пароль"
 
@@ -91,3 +91,25 @@ msgstr "Вашего аккаунта не существует?"
 #: .\templates\login.html:82
 msgid "Create account"
 msgstr "Зарегистрироваться"
+
+#: .\templates\register.html:57 .\templates\register.html:100
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: .\templates\register.html:62
+msgid "Full name"
+msgstr "Полное имя"
+
+#: .\templates\register.html:72
+msgid "Email"
+msgstr "Электронная почта"
+
+#: .\templates\register.html:92
+#, fuzzy
+#| msgid "Password"
+msgid "Confirm Password"
+msgstr "Подтвердите пароль"
+
+#: .\templates\register.html:103
+msgid "Do you have an account?"
+msgstr "У вас есть аккаунт?"

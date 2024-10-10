@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 21:22+0500\n"
+"POT-Creation-Date: 2024-10-10 21:36+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr "Login"
 msgid "Username"
 msgstr "Username"
 
-#: .\templates\login.html:70
+#: .\templates\login.html:70 .\templates\register.html:82
 msgid "Password"
 msgstr "Password"
 
@@ -89,3 +89,25 @@ msgstr "Does your account not exist?"
 #: .\templates\login.html:82
 msgid "Create account"
 msgstr "Create account"
+
+#: .\templates\register.html:57 .\templates\register.html:100
+msgid "Register"
+msgstr "Register"
+
+#: .\templates\register.html:62
+msgid "Full name"
+msgstr "Full name"
+
+#: .\templates\register.html:72
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\register.html:92
+#, fuzzy
+#| msgid "Password"
+msgid "Confirm Password"
+msgstr "Confirm Password"
+
+#: .\templates\register.html:103
+msgid "Do you have an account?"
+msgstr "Do you have an account?"
