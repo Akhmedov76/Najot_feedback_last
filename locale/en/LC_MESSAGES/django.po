@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 12:48+0500\n"
+"POT-Creation-Date: 2024-10-10 14:00+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,28 +18,45 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 #: .\feedback\models.py:16
 msgid "Offer"
-msgstr ""
+msgstr "Offer"
 
-#: .\feedback\models.py:17
+#: .\feedback\models.py:17 .\templates\index.html:63
 msgid "Offers"
-msgstr ""
+msgstr "Offers"
 
 #: .\feedback\models.py:31
 msgid "Problem"
-msgstr ""
+msgstr "Problem"
 
-#: .\feedback\models.py:32
+#: .\feedback\models.py:32 .\templates\index.html:59
+#: .\templates\index.html:128
 msgid "Problems"
-msgstr ""
+msgstr "Problems"
 
 #: .\templates\index.html:55
 msgid "Home"
-msgstr ""
+msgstr "Home"
+
+#: .\templates\index.html:67
+msgid "Comments"
+msgstr "Comments"
+
+#: .\templates\index.html:71
+msgid "404"
+msgstr "404"
 
 #: .\templates\index.html:102
 msgid "Log out"
-msgstr ""
+msgstr "Log out"
 
 #: .\templates\index.html:108
 msgid "Log in"
-msgstr ""
+msgstr "Log in"
+
+#: .\templates\index.html:125
+msgid "Online platform for requests and offers"
+msgstr "Online platform for requests and offers"
+
+#: .\templates\index.html:131
+msgid "Make an offer"
+msgstr "Make an offer"

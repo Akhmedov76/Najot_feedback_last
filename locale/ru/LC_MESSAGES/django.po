@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 12:48+0500\n"
+"POT-Creation-Date: 2024-10-10 14:00+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Offer"
 msgstr "Предложение"
 
-#: .\feedback\models.py:17
+#: .\feedback\models.py:17 .\templates\index.html:63
 msgid "Offers"
 msgstr "Предложения"
 
@@ -30,13 +30,22 @@ msgstr "Предложения"
 msgid "Problem"
 msgstr "Проблема"
 
-#: .\feedback\models.py:32
+#: .\feedback\models.py:32 .\templates\index.html:59
+#: .\templates\index.html:128
 msgid "Problems"
 msgstr "Проблемы"
 
 #: .\templates\index.html:55
 msgid "Home"
-msgstr "Главный "
+msgstr "Главная"
+
+#: .\templates\index.html:67
+msgid "Comments"
+msgstr "Комментарии"
+
+#: .\templates\index.html:71
+msgid "404"
+msgstr "404"
 
 #: .\templates\index.html:102
 msgid "Log out"
@@ -45,3 +54,11 @@ msgstr "Выйти"
 #: .\templates\index.html:108
 msgid "Log in"
 msgstr "Авторизоваться"
+
+#: .\templates\index.html:125
+msgid "Online platform for requests and offers"
+msgstr "Онлайн-платформа для запросов и предложений"
+
+#: .\templates\index.html:131
+msgid "Make an offer"
+msgstr "Сделать предложение"

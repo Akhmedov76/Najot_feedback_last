@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 12:48+0500\n"
+"POT-Creation-Date: 2024-10-10 14:00+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Offer"
 msgstr "Taklif"
 
-#: .\feedback\models.py:17
+#: .\feedback\models.py:17 .\templates\index.html:63
 msgid "Offers"
 msgstr "Takliflar"
 
@@ -28,7 +28,8 @@ msgstr "Takliflar"
 msgid "Problem"
 msgstr "Muammo"
 
-#: .\feedback\models.py:32
+#: .\feedback\models.py:32 .\templates\index.html:59
+#: .\templates\index.html:128
 msgid "Problems"
 msgstr "Muammolar"
 
@@ -36,10 +37,26 @@ msgstr "Muammolar"
 msgid "Home"
 msgstr "Asosiy"
 
+#: .\templates\index.html:67
+msgid "Comments"
+msgstr "Komentariyalar"
+
+#: .\templates\index.html:71
+msgid "404"
+msgstr "404"
+
 #: .\templates\index.html:102
 msgid "Log out"
-msgstr "Chiqich"
+msgstr "Chiqish"
 
 #: .\templates\index.html:108
 msgid "Log in"
 msgstr "Kirish"
+
+#: .\templates\index.html:125
+msgid "Online platform for requests and offers"
+msgstr "So'rovlar va takliflar uchun onlayn platforma"
+
+#: .\templates\index.html:131
+msgid "Make an offer"
+msgstr "Taklif qilish"

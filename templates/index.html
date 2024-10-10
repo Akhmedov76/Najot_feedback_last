@@ -56,19 +56,19 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home_page:submit_offer' %}">Problems</a>
+                        <a class="nav-link" href="{% url 'home_page:submit_offer' %}">{% trans 'Problems' %}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home_page:submit_offer' %}">Offers</a>
+                        <a class="nav-link" href="{% url 'home_page:submit_offer' %}">{% trans 'Offers' %}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home_page:offer' %}">Comments</a>
+                        <a class="nav-link" href="{% url 'home_page:offer' %}">{% trans 'Comments' %}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link " href="{% url 'home_page:error' %}">404</a>
+                        <a class="nav-link " href="{% url 'home_page:error' %}">{% trans '404' %}</a>
                     </li>
 
                     <li class="nav-item">
@@ -122,11 +122,13 @@
 
                     <h6>Exchange of ideas</h6>
 
-                    <h1 class="text-white mb-4">Online platform for requests and offers</h1>
+                    <h1 class="text-white mb-4">{% trans "Online platform for requests and offers" %}</h1>
 
-                    <a href="{% url 'home_page:submit_offer' %}" class="btn custom-btn smoothscroll me-3">Problems</a>
+                    <a href="{% url 'home_page:submit_offer' %}"
+                       class="btn custom-btn smoothscroll me-3">Problems</a>
 
-                    <a href="{% url 'users:login' %}" class="link link--kale smoothscroll">Make an offer</a>
+                    <a href="{% url 'users:login' %}"
+                       class="link link--kale smoothscroll">{% trans 'Make an offer' %}</a>
                 </div>
                 <div class="hero-image-wrap col-lg-6 col-12 mt-3 mt-lg-0">
                     <dotlottie-player src="https://lottie.host/ef67cee9-3f8a-4da2-945f-ab8a83e541b0/QZXEjRpNmf.json"
