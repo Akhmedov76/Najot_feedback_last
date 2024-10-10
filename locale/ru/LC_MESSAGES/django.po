@@ -8,16 +8,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 14:00+0500\n"
+"POT-Creation-Date: 2024-10-10 21:22+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
 #: .\feedback\models.py:16
 msgid "Offer"
 msgstr "Предложение"
@@ -31,7 +33,6 @@ msgid "Problem"
 msgstr "Проблема"
 
 #: .\feedback\models.py:32 .\templates\index.html:59
-#: .\templates\index.html:128
 msgid "Problems"
 msgstr "Проблемы"
 
@@ -62,3 +63,31 @@ msgstr "Онлайн-платформа для запросов и предло�
 #: .\templates\index.html:131
 msgid "Make an offer"
 msgstr "Сделать предложение"
+
+#: .\templates\login.html:51
+msgid "Welcome to"
+msgstr "Добро пожаловать в"
+
+#: .\templates\login.html:52
+msgid "Najot Talim Feedback"
+msgstr "Najot Talim Feedback"
+
+#: .\templates\login.html:55 .\templates\login.html:78
+msgid "Login"
+msgstr "Авторизоваться"
+
+#: .\templates\login.html:60
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: .\templates\login.html:70
+msgid "Password"
+msgstr "Пароль"
+
+#: .\templates\login.html:81
+msgid "Does your account not exist?"
+msgstr "Вашего аккаунта не существует?"
+
+#: .\templates\login.html:82
+msgid "Create account"
+msgstr "Зарегистрироваться"

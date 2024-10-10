@@ -8,14 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 14:00+0500\n"
+"POT-Creation-Date: 2024-10-10 21:22+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
 #: .\feedback\models.py:16
 msgid "Offer"
 msgstr "Taklif"
@@ -29,7 +31,6 @@ msgid "Problem"
 msgstr "Muammo"
 
 #: .\feedback\models.py:32 .\templates\index.html:59
-#: .\templates\index.html:128
 msgid "Problems"
 msgstr "Muammolar"
 
@@ -60,3 +61,31 @@ msgstr "So'rovlar va takliflar uchun onlayn platforma"
 #: .\templates\index.html:131
 msgid "Make an offer"
 msgstr "Taklif qilish"
+
+#: .\templates\login.html:51
+msgid "Welcome to"
+msgstr "Xush kelibsiz"
+
+#: .\templates\login.html:52
+msgid "Najot Talim Feedback"
+msgstr "Najot Talim Feedback"
+
+#: .\templates\login.html:55 .\templates\login.html:78
+msgid "Login"
+msgstr "Kirish"
+
+#: .\templates\login.html:60
+msgid "Username"
+msgstr "Foydalanuvchi nomi"
+
+#: .\templates\login.html:70
+msgid "Password"
+msgstr "Parol"
+
+#: .\templates\login.html:81
+msgid "Does your account not exist?"
+msgstr "Hisobingiz mavjud emasmi?"
+
+#: .\templates\login.html:82
+msgid "Create account"
+msgstr "Hisob yaratish"
