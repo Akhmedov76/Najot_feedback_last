@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 02:40+0500\n"
+"POT-Creation-Date: 2024-10-11 03:31+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,13 +44,17 @@ msgstr "О сайте"
 msgid "About Sites"
 msgstr "О сайтах"
 
-#: .\feedback\models.py:61
+#: .\feedback\models.py:61 .\templates\index.html:190
 msgid "Question"
 msgstr "Вопрос"
 
 #: .\feedback\models.py:62
 msgid "Questions"
 msgstr "Вопросы"
+
+#: .\feedback\models.py:68
+msgid "Profile Image"
+msgstr ""
 
 #: .\feedback\models.py:76
 msgid "Team About Module"
@@ -95,6 +99,18 @@ msgstr "Вопросы - Ответы"
 #: .\templates\index.html:182
 msgid "Frequently asked questions"
 msgstr "Часто задаваемые вопросы"
+
+#: .\templates\index.html:219
+msgid "Team"
+msgstr ""
+
+#: .\templates\index.html:221
+msgid "About the participants in the team"
+msgstr ""
+
+#: .\templates\index.html:236
+msgid "The founder of the project"
+msgstr ""
 
 #: .\templates\login.html:51
 msgid "Welcome to"

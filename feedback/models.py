@@ -65,7 +65,7 @@ class QuestionModel(models.Model):
 class TeamAboutModul(models.Model):
     title = models.CharField(max_length=255, verbose_name='team_about_module_title')
     description = models.TextField()
-    image = models.ImageField(upload_to='team_about_module_images', verbose_name='team_about_module_image')
+    image = models.ImageField(upload_to='team_avatars/', verbose_name=_('Profile Image'), null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
