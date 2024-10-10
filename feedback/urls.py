@@ -5,7 +5,7 @@ from feedback.views import home_page_view, comments_view, submit_offer_view, pro
 
 app_name = 'home_page'
 urlpatterns = [
-    path('', home_page_view, name='home'),
+    # path('', home_page_view, name='home'),
 
     path('comments/', comments_view, name='comments'),
 
