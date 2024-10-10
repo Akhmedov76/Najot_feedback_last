@@ -177,28 +177,20 @@
             <div class="row">
 
                 <div class="col-lg-12 col-12 text-center">
-                    <h6>Questions - Answers</h6>
+                    <h6>{% trans 'Questions - Answers' %}</h6>
 
-                    <h2 class="mb-5">Frequently asked questions</h2>
+                    <h2 class="mb-5">{% trans 'Frequently asked questions' %}</h2>
                 </div>
 
                 <div class="col-lg-4 col-12">
                     <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link smoothscroll" href="#item-1"><strong>Question 1: </strong> How can I
-                                submit feedback?</a>
+                            {% for quest in question %}
+                                <a class="nav-link smoothscroll"
+                                   href="#item-1"><strong>{% trans 'Question' %} {{ forloop.counter }}: </strong>{{ quest.title }}
+                                </a>
+                            {% endfor %}
 
-                            <a class="nav-link smoothscroll" href="#item-2"><strong>Question 2: </strong>
-                                How is feedback processed and what results are published?</a>
-
-                            <a class="nav-link smoothscroll" href="#item-3"><strong>Question 3: </strong>Is my feedback
-                                anonymous?</a>
-
-                            <a class="nav-link smoothscroll" href="#item-4"><strong>Question 4: </strong>Can I
-                                participate in discussions on the site?</a>
-
-                            <a class="nav-link smoothscroll" href="#item-5"><strong>Question 5: </strong>What topics can
-                                be discussed in the forums?</a>
                         </nav>
                     </nav>
                 </div>
@@ -206,50 +198,15 @@
                 <div class="col-lg-8 col-12">
                     <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
                          class="scrollspy-example-2" tabindex="0">
+                        {% for quest in question %}
                         <div class="scrollspy-example-item" id="item-1">
-                            <h5>1. Question: How can I submit feedback?</h5>
+                            <h5>{{ forloop.counter }}. {{ quest.title }}</h5>
 
-                            <p>You can submit feedback using the online form available on our site. Simply fill out the
-                                required sections and submit your comments. Anonymity is an option if you prefer.</p>
-
-                        </div>
-
-                        <div class="scrollspy-example-item" id="item-2">
-                            <h5>2. Question: How is feedback processed and what results are published?</h5>
-
-                            <p> Feedback is regularly analyzed. Monthly or quarterly reports summarizing general trends
-                                and improvements are published on our site. Individual feedback responses are not
-                                provided, but general responses and discussion outcomes are shared.</p>
+                            <p>{{ quest.description }}</p>
 
                         </div>
+                        {% endfor %}
 
-                        <div class="scrollspy-example-item" id="item-3">
-                            <h5>3. Question: Is my feedback anonymous?</h5>
-
-                            <p>
-                                Yes, you can submit feedback anonymously. Your personal information will not be
-                                disclosed, but your feedback will be used for general analysis.
-                            </p>
-                        </div>
-
-                        <div class="scrollspy-example-item" id="item-4">
-                            <h5>4. Question: Can I participate in discussions on the site?</h5>
-
-                            <p>
-                                Yes, the site includes a discussion forum where you can engage with other users. You can
-                                exchange opinions, discuss feedback, and participate in conversations on various topics.
-                            </p>
-                        </div>
-
-                        <div class="scrollspy-example-item" id="item-5">
-                            <h5>5. Question: What topics can be discussed in the forums?</h5>
-
-                            <p>
-                                The forums cover topics such as services, educational processes, teachers, classes, and
-                                other aspects of the educational center’s activities. You can share your opinions and
-                                engage in discussions with other users on these topics.
-                            </p>
-                        </div>
                     </div>
                 </div>
 

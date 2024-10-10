@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 00:27+0500\n"
+"POT-Creation-Date: 2024-10-11 02:40+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,22 @@ msgstr "About Site"
 msgid "About Sites"
 msgstr "About Sites"
 
+#: .\feedback\models.py:61
+msgid "Question"
+msgstr "Question"
+
+#: .\feedback\models.py:62
+msgid "Questions"
+msgstr "Questions"
+
+#: .\feedback\models.py:76
+msgid "Team About Module"
+msgstr "Team About Module"
+
+#: .\feedback\models.py:77
+msgid "Team About Modules"
+msgstr "Team About Modules"
+
 #: .\templates\index.html:55
 msgid "Home"
 msgstr "Home"
@@ -58,7 +74,7 @@ msgstr "404"
 msgid "Log out"
 msgstr "Log out"
 
-#: .\templates\index.html:108 .\templates\register.html:104
+#: .\templates\index.html:108 .\templates\register.html:124
 msgid "Log in"
 msgstr "Log in"
 
@@ -69,6 +85,14 @@ msgstr "Online platform for requests and offers"
 #: .\templates\index.html:131
 msgid "Make an offer"
 msgstr "Make an offer"
+
+#: .\templates\index.html:180
+msgid "Questions - Answers"
+msgstr "Questions - Answers"
+
+#: .\templates\index.html:182
+msgid "Frequently asked questions"
+msgstr "Frequently asked questions"
 
 #: .\templates\login.html:51
 msgid "Welcome to"
@@ -82,11 +106,11 @@ msgstr "Najot Talim Feedback"
 msgid "Login"
 msgstr "Login"
 
-#: .\templates\login.html:60
+#: .\templates\login.html:60 .\templates\register.html:82
 msgid "Username"
 msgstr "Username"
 
-#: .\templates\login.html:70 .\templates\register.html:82
+#: .\templates\login.html:70 .\templates\register.html:102
 msgid "Password"
 msgstr "Password"
 
@@ -98,27 +122,33 @@ msgstr "Does your account not exist?"
 msgid "Create account"
 msgstr "Create account"
 
-#: .\templates\register.html:57 .\templates\register.html:100
+#: .\templates\register.html:57 .\templates\register.html:120
 msgid "Register"
 msgstr "Register"
 
 #: .\templates\register.html:62
-msgid "Full name"
+#, fuzzy
+#| msgid "Full name"
+msgid "First name"
 msgstr "Full name"
 
 #: .\templates\register.html:72
+msgid "Last name"
+msgstr ""
+
+#: .\templates\register.html:92
 msgid "Email"
 msgstr "Email"
 
-#: .\templates\register.html:92
+#: .\templates\register.html:112
 #, fuzzy
 #| msgid "Password"
 msgid "Confirm Password"
 msgstr "Confirm Password"
 
-#: .\templates\register.html:103
+#: .\templates\register.html:123
 msgid "Do you have an account?"
 msgstr "Do you have an account?"
 
-msgid "title"
-msgstr "title"
+#~ msgid "title"
+#~ msgstr "title"

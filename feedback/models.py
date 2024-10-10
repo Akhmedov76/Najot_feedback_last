@@ -46,3 +46,32 @@ class AboutSiteModel(models.Model):
         verbose_name = _("About Site")
         verbose_name_plural = _("About Sites")
 
+
+class QuestionModel(models.Model):
+    title = models.CharField(max_length=255, verbose_name='question_title', unique=True)
+    description = models.TextField()
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = _("Question")
+        verbose_name_plural = _("Questions")
+
+
+class TeamAboutModul(models.Model):
+    title = models.CharField(max_length=255, verbose_name='team_about_module_title')
+    description = models.TextField()
+    image = models.ImageField(upload_to='team_about_module_images', verbose_name='team_about_module_image')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = _("Team About Module")
+        verbose_name_plural = _("Team About Modules")
