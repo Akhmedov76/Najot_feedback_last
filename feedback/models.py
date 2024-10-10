@@ -30,3 +30,4 @@ class ProblemsModel(models.Model):
     class Meta:
         verbose_name = _("Problem")
         verbose_name_plural = _("Problems")
+

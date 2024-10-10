@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 12:13+0500\n"
+"POT-Creation-Date: 2024-10-10 12:48+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 #: .\feedback\models.py:16
 msgid "Offer"
-msgstr "Offer"
+msgstr ""
 
 #: .\feedback\models.py:17
 msgid "Offers"
-msgstr "Offers"
+msgstr ""
 
 #: .\feedback\models.py:31
 msgid "Problem"
-msgstr "Problem"
+msgstr ""
 
 #: .\feedback\models.py:32
 msgid "Problems"
-msgstr "Problems"
+msgstr ""
+
+#: .\templates\index.html:55
+msgid "Home"
+msgstr ""
+
+#: .\templates\index.html:102
+msgid "Log out"
+msgstr ""
+
+#: .\templates\index.html:108
+msgid "Log in"
+msgstr ""
