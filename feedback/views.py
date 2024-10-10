@@ -1,7 +1,6 @@
 from django.shortcuts import render
 
-from feedback.form import OfferForm
-from feedback.models import OffersModel, ProblemsModel
+from feedback.form import OfferForm, ProblemsForm
 from users.models import RegisterModel, LoginModel
 
 
@@ -12,20 +11,8 @@ def home_page_view(request):
 
 
 def comments_view(request):
-    return render(request, './main/comments/comment.html')
+    return render(request, 'comment.html')
 
-
-# def submit_offer_view(request):
-#     if request.method == 'POST':
-#         form = OfferForm(request.POST)
-#         if form.is_valid():
-#             title = form.cleaned_data['title']
-#             description = form.cleaned_data['description']
-#             OffersModel.objects.create(title=title, description=description)
-#             return render(request, 'thank_you.html')
-#     else:
-#         form = OfferForm()
-#     return render(request, 'main/forms/offer/offer-form.html', {'form': form})
 
 def submit_offer_view(request):
     if request.method == 'POST':
@@ -35,21 +22,27 @@ def submit_offer_view(request):
             return render(request, 'thank_you.html')
     else:
         form = OfferForm()
-    return render(request, 'main/forms/offer/offer-form.html', {'form': form})
+    return render(request, 'offer-form.html', {'form': form})
 
 
 def problem_view(request):
-    problems = ProblemsModel.objects.all()
-    return render(request, 'thank_you.html', {'problems': problems})
+    if request.method == 'POST':
+        form = ProblemsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'thank_you.html')
+        else:
+            form = ProblemsForm()
+            return render(request, 'problem-form.html', {'form': form})
 
 
 def offer_view(request):
-    return render(request, './main/offers/offer.html')
+    return render(request, 'offer.html')
 
 
 def profile_view(request):
-    return render(request, './main/profile/profile.html')
+    return render(request, 'profile.html')
 
 
 def error_view(request):
-    return render(request, 'main/404/404.html')
+    return render(request, '404.html')

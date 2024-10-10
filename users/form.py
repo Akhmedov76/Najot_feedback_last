@@ -9,6 +9,6 @@ class RegistrationForm(UserCreationForm):
         fields = ('first_name', 'last_name', 'email', 'password1', 'password2')
 
 
-class LoginForm(UserCreationForm):
+class LoginForm(forms.Form):
     username = forms.CharField(max_length=255)
     password = forms.CharField(max_length=255)

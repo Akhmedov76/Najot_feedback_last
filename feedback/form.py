@@ -1,6 +1,6 @@
 from django import forms
 
-from feedback.models import OffersModel
+from feedback.models import OffersModel, ProblemsModel
 
 
 class OfferForm(forms.ModelForm):
@@ -9,7 +9,7 @@ class OfferForm(forms.ModelForm):
         fields = ('title', 'description')
 
 
-class ProblemsForm(forms.Form):
+class ProblemsForm(forms.ModelForm):
     class Meta:
-        model = OffersModel
-        fields = ('title', 'description', 'problems')
+        model = ProblemsModel
+        fields = ('title', 'description')

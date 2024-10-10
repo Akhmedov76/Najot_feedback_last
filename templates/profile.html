@@ -28,13 +28,13 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="../../index.html">
+        <a class="navbar-brand" href="index.html">
             <i><img src="{% static 'files/images/logo.png' %}" alt="404" style="width: 60px;"></i>
             <span>Najot Ta'lim</span>
         </a>
 
         <div class="d-lg-none ms-auto me-3">
-            <a href="../auth/login/login.html" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
+            <a href="login.html" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
                 <i class="btn-icon bi-person"></i>
                 <span>Log in</span>
             </a>
@@ -48,11 +48,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-lg-auto me-lg-4">
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    <a class="nav-link click-scroll" href="{% url 'home_page:home' %}">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="#section_2">The Site</a>
+                    <a class="nav-link click-scroll" href="#{% url 'home_page:home' %}">The Site</a>
                 </li>
 
                 <li class="nav-item">
@@ -64,16 +64,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="main/offers/offer.html">Comments</a>
+                    <a class="nav-link click-scroll" href="offer.html">Comments</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link click-scroll" href="main/404/404.html">404</a>
+                    <a class="nav-link click-scroll" href="404.html">404</a>
                 </li>
             </ul>
 
             <div class="d-none d-lg-block">
-                <a href="../auth/login/login.html"
+                <a href="login.html"
                    class="btn custom-btn custom-border-btn btn-naira btn-inverted">
                     <i class="btn-icon bi-person"></i>
                     <span>Log in</span>

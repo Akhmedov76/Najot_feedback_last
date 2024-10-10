@@ -1,14 +1,12 @@
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
+from django.contrib.sites.shortcuts import get_current_site
+from django.core.mail import EmailMultiAlternatives
 from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
 from django.urls import reverse_lazy, reverse
 from django.utils.encoding import force_str, force_bytes
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
-from django.contrib import messages
-from django.contrib.auth import authenticate, login
-from django.contrib.auth.models import User
-from django.contrib.sites.shortcuts import get_current_site
-from django.core.mail import EmailMultiAlternatives
-from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_protect
 
 from conf.settings import EMAIL_HOST_USER
@@ -80,27 +78,28 @@ def register_view(request):
             return redirect(reverse_lazy('users:login'))
         else:
             errors = form.errors
-            return render(request, 'main/auth/register/register.html', {'errors': errors, 'form': form})
+            return render(request, 'register.html', {'errors': errors, 'form': form})
     else:
         form = RegistrationForm()
-        return render(request, 'main/auth/register/register.html', {'form': form})
+        return render(request, 'register.html', {'form': form})
 
 
 def login_view(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
-            email = form.cleaned_data['email']
+            username = form.cleaned_data['username']
             password = form.cleaned_data['password']
-            user = authenticate(request=request, email=email, password=password)
+            user = authenticate(request=request, username=username, password=password)
             if user is not None:
-                login(user, request)
-                return redirect(reverse_lazy('/'))
+                login(user=user, request=request)
+                return redirect(reverse_lazy('home_page:home'))
             else:
                 errors = form.errors
-                return render(request, 'main/auth/login/login.html', {'errors': errors})
-    return render(request, 'main/auth/login/login.html')
+                return render(request, 'login.html', {'errors': errors})
+    return render(request, 'login.html')
 
 
 def logout_view(request):
-    return HttpResponse("This is a logout view")
+    logout(request)
+    return redirect('/')
