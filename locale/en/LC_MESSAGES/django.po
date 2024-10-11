@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 03:31+0500\n"
+"POT-Creation-Date: 2024-10-11 10:59+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,10 +50,6 @@ msgstr "Question"
 msgid "Questions"
 msgstr "Questions"
 
-#: .\feedback\models.py:68
-msgid "Profile Image"
-msgstr "Profile Image"
-
 #: .\feedback\models.py:76
 msgid "Team About Module"
 msgstr "Team About Module"
@@ -62,7 +58,21 @@ msgstr "Team About Module"
 msgid "Team About Modules"
 msgstr "Team About Modules"
 
-#: .\templates\index.html:55
+#: .\feedback\models.py:84
+msgid "Profile Image"
+msgstr "Profile Image"
+
+#: .\feedback\models.py:93
+msgid "Appeals Module"
+msgstr "Appeals Module"
+
+#: .\feedback\models.py:94
+#, fuzzy
+#| msgid "Team About Modules"
+msgid "Appeals Modules"
+msgstr "Appeals Modules"
+
+#: .\templates\index.html:55 .\templates\index.html:328
 msgid "Home"
 msgstr "Home"
 
@@ -110,6 +120,32 @@ msgstr "About the participants in the team"
 msgid "The founder of the project"
 msgstr "The founder of the project"
 
+#: .\templates\index.html:267
+msgid "Appeals"
+msgstr "Appeals"
+
+#: .\templates\index.html:269
+msgid "Best offers"
+msgstr "Best offers"
+
+#: .\templates\index.html:321
+#, fuzzy
+#| msgid "Najot Talim Feedback"
+msgid "All Right Reserved Najot Talim Feedback"
+msgstr "Najot Talim Feedback"
+
+#: .\templates\index.html:331
+msgid "Terms"
+msgstr "Terms"
+
+#: .\templates\index.html:334
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: .\templates\index.html:337
+msgid "Contact"
+msgstr "Contact"
+
 #: .\templates\login.html:51
 msgid "Welcome to"
 msgstr "Welcome to"
@@ -150,7 +186,7 @@ msgstr "Full name"
 
 #: .\templates\register.html:72
 msgid "Last name"
-msgstr ""
+msgstr "Last name"
 
 #: .\templates\register.html:92
 msgid "Email"

@@ -1,6 +1,6 @@
 from django import forms
 
-from feedback.models import OffersModel, ProblemsModel, AboutSiteModel, TeamAboutModul, QuestionModel
+from feedback.models import OffersModel, ProblemsModel, AboutSiteModel, TeamAboutModul, QuestionModel, AppealsModule
 
 
 class OfferForm(forms.ModelForm):
@@ -31,3 +31,9 @@ class QuestionForm(forms.ModelForm):
     class Meta:
         model = QuestionModel
         fields = ('title', 'description')
+
+
+class AppealsForm(forms.ModelForm):
+    class Meta:
+        model = AppealsModule
+        fields = ('title', 'role', 'description', 'image',)

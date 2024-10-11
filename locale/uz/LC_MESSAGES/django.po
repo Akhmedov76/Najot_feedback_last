@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 03:31+0500\n"
+"POT-Creation-Date: 2024-10-11 10:59+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,10 +50,6 @@ msgstr "Savol"
 msgid "Questions"
 msgstr "Savollar"
 
-#: .\feedback\models.py:68
-msgid "Profile Image"
-msgstr "Profil rasmi"
-
 #: .\feedback\models.py:76
 msgid "Team About Module"
 msgstr "Jamoa haqida"
@@ -62,7 +58,21 @@ msgstr "Jamoa haqida"
 msgid "Team About Modules"
 msgstr "Jamoalar haqida"
 
-#: .\templates\index.html:55
+#: .\feedback\models.py:84
+msgid "Profile Image"
+msgstr "Profil rasmi"
+
+#: .\feedback\models.py:93
+msgid "Appeals Module"
+msgstr "Apellyatsiya moduli"
+
+#: .\feedback\models.py:94
+#, fuzzy
+#| msgid "Team About Modules"
+msgid "Appeals Modules"
+msgstr "Jamoalar haqida"
+
+#: .\templates\index.html:55 .\templates\index.html:328
 msgid "Home"
 msgstr "Asosiy"
 
@@ -109,6 +119,32 @@ msgstr "Jamoadagi ishtirokchilar haqida"
 #: .\templates\index.html:236
 msgid "The founder of the project"
 msgstr "Loyiha asoschisi"
+
+#: .\templates\index.html:267
+msgid "Appeals"
+msgstr "Apellyatsiya"
+
+#: .\templates\index.html:269
+msgid "Best offers"
+msgstr "Eng yaxshi takliflar"
+
+#: .\templates\index.html:321
+#, fuzzy
+#| msgid "Najot Talim Feedback"
+msgid "All Right Reserved Najot Talim Feedback"
+msgstr "Barcha huquqlar himoyalangan Najot Talim Feedback"
+
+#: .\templates\index.html:331
+msgid "Terms"
+msgstr "Shartlar"
+
+#: .\templates\index.html:334
+msgid "Privacy Policy"
+msgstr "Maxfiylik siyosati"
+
+#: .\templates\index.html:337
+msgid "Contact"
+msgstr "Aloqa"
 
 #: .\templates\login.html:51
 msgid "Welcome to"

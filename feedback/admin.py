@@ -1,7 +1,7 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
 
-from .models import OffersModel, ProblemsModel, AboutSiteModel, QuestionModel, TeamAboutModul
+from .models import OffersModel, ProblemsModel, AboutSiteModel, QuestionModel, TeamAboutModul, AppealsModule
 
 
 @admin.register(OffersModel)
@@ -96,6 +96,25 @@ class TeamAboutModulAdmin(TranslationAdmin):
             'modeltranslation/js/tabbed_translation_fields.js',
         )
 
+        css = {
+            'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
+        }
+
+
+@admin.register(AppealsModule)
+class AppealsModuleAdmin(TranslationAdmin):
+    list_display = ('title', 'role', 'description', 'created_at', 'updated_at')
+    list_filter = ('created_at', 'updated_at')
+    search_fields = ('title', 'role', 'description')
+    date_hierarchy = 'created_at'
+    ordering = ('-created_at',)
+
+    class Media:
+        js = (
+            'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
+            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js',
+            'modeltranslation/js/tabbed_translation_fields.js',
+        )
         css = {
             'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
         }

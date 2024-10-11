@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from .models import OffersModel, ProblemsModel, AboutSiteModel, QuestionModel, TeamAboutModul
+from .models import OffersModel, ProblemsModel, AboutSiteModel, QuestionModel, TeamAboutModul, AppealsModule
 
 
 @register(OffersModel)
@@ -29,3 +29,8 @@ class QuestionModelTranslationOptions(TranslationOptions):
 @register(TeamAboutModul)
 class TeamAboutModulTranslationOptions(TranslationOptions):
     fields = ('title', 'description')
+
+
+@register(AppealsModule)
+class AppealsModuleTranslationOptions(TranslationOptions):
+    fields = ('title', 'role', 'description')

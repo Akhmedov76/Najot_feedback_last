@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 03:31+0500\n"
+"POT-Creation-Date: 2024-10-11 10:59+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,10 +52,6 @@ msgstr "Вопрос"
 msgid "Questions"
 msgstr "Вопросы"
 
-#: .\feedback\models.py:68
-msgid "Profile Image"
-msgstr "Изображение профиля"
-
 #: .\feedback\models.py:76
 msgid "Team About Module"
 msgstr "Команда О Модуле"
@@ -64,7 +60,21 @@ msgstr "Команда О Модуле"
 msgid "Team About Modules"
 msgstr "Команда о модулях"
 
-#: .\templates\index.html:55
+#: .\feedback\models.py:84
+msgid "Profile Image"
+msgstr "Изображение профиля"
+
+#: .\feedback\models.py:93
+msgid "Appeals Module"
+msgstr "Модуль апелляций"
+
+#: .\feedback\models.py:94
+#, fuzzy
+#| msgid "Team About Modules"
+msgid "Appeals Modules"
+msgstr "Команда о модулях"
+
+#: .\templates\index.html:55 .\templates\index.html:328
 msgid "Home"
 msgstr "Главная"
 
@@ -111,6 +121,32 @@ msgstr "Об участниках команды"
 #: .\templates\index.html:236
 msgid "The founder of the project"
 msgstr "Основатель проекта"
+
+#: .\templates\index.html:267
+msgid "Appeals"
+msgstr "Апелляции"
+
+#: .\templates\index.html:269
+msgid "Best offers"
+msgstr "Лучшие предложения"
+
+#: .\templates\index.html:321
+#, fuzzy
+#| msgid "Najot Talim Feedback"
+msgid "All Right Reserved Najot Talim Feedback"
+msgstr "Najot Talim Feedback"
+
+#: .\templates\index.html:331
+msgid "Terms"
+msgstr "Условия"
+
+#: .\templates\index.html:334
+msgid "Privacy Policy"
+msgstr "Политика конфиденциальности"
+
+#: .\templates\index.html:337
+msgid "Contact"
+msgstr "Контакт"
 
 #: .\templates\login.html:51
 msgid "Welcome to"

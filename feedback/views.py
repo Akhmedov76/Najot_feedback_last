@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from feedback.form import OfferForm, ProblemsForm
-from feedback.models import AboutSiteModel, QuestionModel, TeamAboutModul
+from feedback.models import AboutSiteModel, QuestionModel, TeamAboutModul, AppealsModule
 from users.models import RegisterModel, LoginModel
 
 
@@ -11,12 +11,14 @@ def home_page_view(request):
     about_site_form = AboutSiteModel.objects.all()
     team_about_form = TeamAboutModul.objects.all()
     question_form = QuestionModel.objects.all()
+    appeals_form = AppealsModule.objects.all()
     context={
         'register': register_form,
         'login': login_form,
         'about_site': about_site_form,
         'team_about': team_about_form,
         'question': question_form,
+        'appeals': appeals_form,
     }
     return render(request, 'index.html', context)
 
