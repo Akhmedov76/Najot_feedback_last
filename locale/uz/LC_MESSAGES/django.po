@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 10:59+0500\n"
+"POT-Creation-Date: 2024-10-11 14:31+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,7 @@ msgid "Offer"
 msgstr "Taklif"
 
 #: .\feedback\models.py:17 .\templates\index.html:63
+#: .\templates\offer-form.html:41
 msgid "Offers"
 msgstr "Takliflar"
 
@@ -31,6 +32,7 @@ msgid "Problem"
 msgstr "Muammo"
 
 #: .\feedback\models.py:32 .\templates\index.html:59 .\templates\index.html:128
+#: .\templates\offer-form.html:42
 msgid "Problems"
 msgstr "Muammolar"
 
@@ -73,6 +75,7 @@ msgid "Appeals Modules"
 msgstr "Jamoalar haqida"
 
 #: .\templates\index.html:55 .\templates\index.html:328
+#: .\templates\offer-form.html:45
 msgid "Home"
 msgstr "Asosiy"
 
@@ -129,10 +132,8 @@ msgid "Best offers"
 msgstr "Eng yaxshi takliflar"
 
 #: .\templates\index.html:321
-#, fuzzy
-#| msgid "Najot Talim Feedback"
-msgid "All Right Reserved Najot Talim Feedback"
-msgstr "Barcha huquqlar himoyalangan Najot Talim Feedback"
+msgid "All Right Reserved"
+msgstr "Barcha huquqlar himoyalangan"
 
 #: .\templates\index.html:331
 msgid "Terms"
@@ -174,6 +175,49 @@ msgstr "Hisobingiz mavjud emasmi?"
 msgid "Create account"
 msgstr "Hisob yaratish"
 
+#: .\templates\offer-form.html:48
+msgid "Submit a problem"
+msgstr "Muammoni yuboring"
+
+#: .\templates\offer-form.html:50 .\templates\offer-form.html:65
+#, fuzzy
+#| msgid "title"
+msgid "Title"
+msgstr "Sarlavha"
+
+#: .\templates\offer-form.html:52
+msgid "Enter problem title"
+msgstr "Muammo nomini kiriting"
+
+#: .\templates\offer-form.html:55
+#, fuzzy
+msgid "Question"
+msgstr "Savol"
+
+#: .\templates\offer-form.html:70
+msgid "Description"
+msgstr "Tavsif"
+
+#: .\templates\offer-form.html:57
+msgid "Enter problem description"
+msgstr "Muammo tavsifini kiriting"
+
+#: .\templates\offer-form.html:59 .\templates\offer-form.html:74
+msgid "Submit"
+msgstr "Yuborish"
+
+#: .\templates\offer-form.html:63
+msgid "Submit a offer"
+msgstr "Taklif yuboring"
+
+#: .\templates\offer-form.html:67
+msgid "Enter offer title"
+msgstr "Taklif sarlavhasini kiriting"
+
+#: .\templates\offer-form.html:72
+msgid "Enter offer description"
+msgstr "Taklif tavsifini kiriting"
+
 #: .\templates\register.html:57 .\templates\register.html:120
 msgid "Register"
 msgstr "Roʻyxatdan oʻtish"
@@ -201,6 +245,3 @@ msgstr "Parolni tasdiqlang"
 #: .\templates\register.html:123
 msgid "Do you have an account?"
 msgstr "Hisobingiz bormi?"
-
-#~ msgid "title"
-#~ msgstr "Sarlavha"

@@ -27,6 +27,9 @@ def comments_view(request):
     return render(request, 'comment.html')
 
 
+def offers_view(request):
+    return render(request, 'offer-form.html')
+
 def submit_offer_view(request):
     if request.method == 'POST':
         form = OfferForm(request.POST)

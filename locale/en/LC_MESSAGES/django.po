@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 10:59+0500\n"
+"POT-Creation-Date: 2024-10-11 14:57+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,7 @@ msgid "Offer"
 msgstr "Offer"
 
 #: .\feedback\models.py:17 .\templates\index.html:63
+#: .\templates\offer-form.html:41 .\templates\offer.html:123
 msgid "Offers"
 msgstr "Offers"
 
@@ -31,6 +32,7 @@ msgid "Problem"
 msgstr "Problem"
 
 #: .\feedback\models.py:32 .\templates\index.html:59 .\templates\index.html:128
+#: .\templates\offer-form.html:42
 msgid "Problems"
 msgstr "Problems"
 
@@ -72,7 +74,18 @@ msgstr "Appeals Module"
 msgid "Appeals Modules"
 msgstr "Appeals Modules"
 
+#: .\templates\comment.html:33
+#, fuzzy
+#| msgid "Offers"
+msgid "All Offers"
+msgstr "Offers"
+
+#: .\templates\comment.html:45
+msgid "Who wrote a comment"
+msgstr ""
+
 #: .\templates\index.html:55 .\templates\index.html:328
+#: .\templates\offer-form.html:45
 msgid "Home"
 msgstr "Home"
 
@@ -131,8 +144,8 @@ msgstr "Best offers"
 #: .\templates\index.html:321
 #, fuzzy
 #| msgid "Najot Talim Feedback"
-msgid "All Right Reserved Najot Talim Feedback"
-msgstr "Najot Talim Feedback"
+msgid "All Right Reserved"
+msgstr "All Right Reserved"
 
 #: .\templates\index.html:331
 msgid "Terms"
@@ -174,6 +187,74 @@ msgstr "Does your account not exist?"
 msgid "Create account"
 msgstr "Create account"
 
+#: .\templates\offer-form.html:48
+msgid "Submit a problem"
+msgstr ""
+
+#: .\templates\offer-form.html:50 .\templates\offer-form.html:65
+#, fuzzy
+#| msgid "title"
+msgid "Title"
+msgstr "title"
+
+#: .\templates\offer-form.html:52
+msgid "Enter problem title"
+msgstr ""
+
+#: .\templates\offer-form.html:55 .\templates\offer-form.html:70
+#, fuzzy
+#| msgid "Question"
+msgid "Description"
+msgstr "Question"
+
+#: .\templates\offer-form.html:57
+msgid "Enter problem description"
+msgstr ""
+
+#: .\templates\offer-form.html:59 .\templates\offer-form.html:74
+msgid "Submit"
+msgstr ""
+
+#: .\templates\offer-form.html:63
+msgid "Submit a offer"
+msgstr ""
+
+#: .\templates\offer-form.html:67
+msgid "Enter offer title"
+msgstr ""
+
+#: .\templates\offer-form.html:72
+msgid "Enter offer description"
+msgstr ""
+
+#: .\templates\offer.html:105
+#, fuzzy
+#| msgid "Offers"
+msgid "Show Offers"
+msgstr "Offers"
+
+#: .\templates\offer.html:106
+msgid "Show Demands"
+msgstr ""
+
+#: .\templates\offer.html:107
+#, fuzzy
+#| msgid "Offers"
+msgid "Show My Offers"
+msgstr "Offers"
+
+#: .\templates\offer.html:108
+msgid "Show My Written Offers"
+msgstr ""
+
+#: .\templates\offer.html:113
+msgid "Search"
+msgstr ""
+
+#: .\templates\offer.html:140
+msgid "Ant Collector"
+msgstr ""
+
 #: .\templates\register.html:57 .\templates\register.html:120
 msgid "Register"
 msgstr "Register"
@@ -201,6 +282,3 @@ msgstr "Confirm Password"
 #: .\templates\register.html:123
 msgid "Do you have an account?"
 msgstr "Do you have an account?"
-
-#~ msgid "title"
-#~ msgstr "title"

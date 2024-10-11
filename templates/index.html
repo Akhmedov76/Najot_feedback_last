@@ -67,9 +67,9 @@
                         <a class="nav-link" href="{% url 'home_page:offer' %}">{% trans 'Comments' %}</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link " href="{% url 'home_page:error' %}">{% trans '404' %}</a>
-                    </li>
+                    {#                    <li class="nav-item">#}
+                    {#                        <a class="nav-link " href="{% url 'home_page:error' %}">{% trans '404' %}</a>#}
+                    {#                    </li>#}
 
                     <li class="nav-item">
                         <select class="form-select language-select" aria-label="Select language"
@@ -221,11 +221,13 @@
             <h2 class="mb-5">{% trans 'About the participants in the team' %}</h2>
         </div>
         <div class="slider">
+
             <div class="slides-track">
+                {% for team in team_about %}
                 <div class="slide">
                     <div class="container">
                         <div class="row">
-                            {% for team in team_about %}
+
                             <div class="col-lg-6 col-12">
                                 <img src="{{ team.image.url }}"
                                      class="author-image img-fluid"
@@ -239,13 +241,15 @@
 
                                     <p>{{ team.description }}</p>
                             </div>
-                            {% endfor %}
+
 
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
             </div>
+
 
         </div>
         <br>
@@ -318,7 +322,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <span>Copyright © 2024, {% trans 'All Right Reserved Najot Talim Feedback' %}</span>
+                    <span>Copyright © 2024, {% trans 'All Right Reserved' %} Najot Talim Feedback </span>
                 </div>
                 <!-- End Col -->
                 <div class="col-md-6">
